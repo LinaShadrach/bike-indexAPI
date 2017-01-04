@@ -1,7 +1,6 @@
 {
-  "name": "alarm-clock",
+  "name": "bike-index",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +19,28 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.4",
     "uglify": "^0.1.5"
-  }
+  },
+  "dependencies": {
+    "bower-files": "^3.14.1",
+    "browser-sync": "^2.18.5",
+    "browserify": "^13.1.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "uglify": "^0.1.5",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinaShadrach/bike-index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LinaShadrach/bike-index/issues"
+  },
+  "homepage": "https://github.com/LinaShadrach/bike-inde#readme",
+  "description": ""
 }
