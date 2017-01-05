@@ -47,13 +47,7 @@ $(document).ready(function(){
       makeMark(response.results[0].geometry.location.lat, response.results[0].geometry.location.lng, map);
     });
   };
-
 });
-
-
-// if (zip.length>=5) {
-//   var zipSlice= zip.slice(zip.length-6,zip.length).join();
-// }
 
 // var googleKey = require('./../.env').googleKey;
 //
