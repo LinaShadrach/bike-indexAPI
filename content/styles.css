@@ -3,6 +3,9 @@
   height: 400px;
   background-color: grey;
 }
+html, body{
+  height: 700px;
+}
 button {
-  color:red;
+  color:blue;
 }
