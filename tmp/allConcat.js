@@ -1,4 +1,5 @@
 var apiKey = require('./../.env').apiKey;
+var googleKey = require('./../.env').googleKey;
 var Bike = require('./../js/bike.js').bikeModule;
 
 $(document).ready(function(){
