@@ -2,6 +2,7 @@
   width: 100%;
   height: 400px;
   background-color: grey;
+  display: none
 }
 html, body{
   height: 700px;

@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="content/styles.css">
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjYO1otKA1VaRR26Wz92Ono2ccqckZuNY" async defer>
     </script>
     <script src="build/js/vendor.min.js"></script>
@@ -10,16 +10,24 @@
     <title>Bike Finder</title>
   </head>
   <body>
+    <div class="header">
+      <h1>Where are the Bikes?</h1>
+    </div>
     <form class="findBikes" method="post">
       <h3></h3>
-      <label for="manufacturer">Enter a Manufacturer to see where it is most frequently stolen</label>
+      <label for="manufacturer">Enter a Manufacturer to see where the bikes were stolen</label>
       <input type="text" name="manufacturer" id="manufacturer">
       <button type="submit" name="countButton">Submit</button>
       <h3 id="result"></h3>
     </form>
-    <div id="bikeMap">
 
-    </div>
+      <div id="bikeMap">
+
+      </div>
+
+
+
+
   </body>
 </html>
 

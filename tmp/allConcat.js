@@ -30,8 +30,7 @@ $(document).ready(function(){
     var make = $("#manufacturer").val();
     $("#make").val("");
     $.get('https://bikeindex.org:443/api/v3/search?page=1&per_page=100&manufacturer=' + make + '&location=' + location + ' &stolenness=stolen&access_token=' + bikeKey).then(function(response){
-      // console.log(response);
-      $('#result').text(response.bikes[0]);
+      $('#result').text("See the map below for " + make + " bikes stolen in the USA");
       console.log(response.bikes[0]);
       var bike = new Bike();
       var bikeAddresses = bike.getAddresses(response.bikes);
@@ -41,6 +40,7 @@ $(document).ready(function(){
         mapFunction(zips[i], map);
       }
     });
+    $("#bikeMap").show();
   });
   var mapFunction = function(postalCode, map) {
     $.get('https:maps.googleapis.com/maps/api/geocode/json?components=postal_code:'+ postalCode + '&key='+ geoKey).then(function(response){
